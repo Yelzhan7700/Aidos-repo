@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ertegiler</title>
+	<link href="https://fonts.googleapis.com/css2?family=Condiment&family=Montserrat:wght@500;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Condiment&family=Montserrat:wght@500;900&display=swap" rel="stylesheet">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+		<nav>
+			<a href="#" class="logo">Ertegi<span>ler</span></a>
+			<ul class="navbar">
+				<li><a href="#">Басты бет</a></li>
+				<li><a href="#">Ертегілер</a></li>
+				<li><a href="#">Біз туралы</a></li>
+				<li><a href="#">Байланыс</a></li>
+			</ul>
+			<a href="#" class="btn">Нөмірге тіркелу</a>
+			<i class='bx bx-menu' id="menu-icon"></i>
+		</nav>
+	<section class="hero">
+		<div class="hero-text">
+			<h1>Ертегілер <span>еліне саяхат</span></h1>
+			<p>Ертегі – фольклордың негізгі жанрларының бірі. Ертегі жанры – халық прозасының дамыған, көркемделген түрі, яғни фольклорлық көркем проза.</p>
+		</div>
+		<div class="slider">
+			<div class="slide">
+				<input type="radio" name="radio-btn" id="radio1">
+				<input type="radio" name="radio-btn" id="radio2">
+				<input type="radio" name="radio-btn" id="radio3">
+				<input type="radio" name="radio-btn" id="radio4">
+
+				<div class="st first">
+					<img src="ertegi11.jpg">
+				</div>
+				<div class="st">
+					<img src="ertegi2.jpg">
+				</div>
+				<div class="st">
+					<img src="ertegi3.jpg">
+				</div>
+				<div class="st">
+					<img src="ertegi4.jpg">
+				</div>
+
+				<div class="nav-auto">
+					<div class="a-b1"></div>
+					<div class="a-b2"></div>
+					<div class="a-b3"></div>
+					<div class="a-b4"></div>
+				</div>
+			</div>
+
+			<div class="nav-m">
+				<label for="radio1" class="m-btn"></label>
+				<label for="radio2" class="m-btn"></label>
+				<label for="radio3" class="m-btn"></label>
+				<label for="radio4" class="m-btn"></label>
+			</div>
+		</div>
+	</section>
+
+	<section class="about">
+		<div class="main">
+			<img src="aidos.jpg" class="about-img">
+			<div class="about-text">
+				<h2>Біз туралы</h2>
+				<h5>Айтуар <span>& Айдос</span></h5>
+				<p>Ертегі-әңгімелеріміз балаларға арналған газет журналдарда басылып шығады. Бірқатар әңгімелеріміз шетелдік журналдарға аударылып жарыққа шықты. Командамызда 20-ға тарта қызметкерлеріміз жұмыс жасайды.</p>
+				<button type="button">Әңгімелесейік</button>
+			</div>
+		</div>
+	</section>
+
+	<div class="contact-me">
+		<p>Журналдың келесі санына жазыл</p>
+		<a class="button-two" href="#">Жазылу</a>
+	</div>
+
+	<footer>
+		<p>Aituar Aidos</p>
+		<p>Көбірек ертегі алу үшін бізбен байланысқа шығыңыз </p>
+		<div class="social">
+			<a href="#"><i class="ri-facebook-fill"></i></a>
+			<a href="#"><i class="ri-instagram-fill"></i></a>
+			<a href="#"><i class="ri-twitter-fill"></i></a>
+			<a href="#"><i class="ri-youtube-fill"></i></a>
+		</div>
+		<p class="end">CopyRight By Aituar Aidos</p>
+	</footer>
+
+	<script>
+          var counter = 1;
+          setInterval(function(){
+          		document.getElementById('radio' + counter).checked = true;
+          		counter++;
+          		if (counter > 4){
+          			counter = 1;
+          		}
+          },5000);
+
+          let menu = document.querySelector('#menu-icon');
+		  let navbar = document.querySelector('.navbar');
+
+		  menu.onclick = () => {
+			  menu.classList.toggle('bx-x');
+			  navbar.classList.toggle('open');
+          };
+    </script>
+</body>
+</html>
